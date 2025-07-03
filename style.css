@@ -7,6 +7,11 @@
 body {
   margin-top: 100px;
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 h1,
 h2,
@@ -85,4 +90,30 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .primary-link {
+    display: block;
+    text-align: center;
+    margin: 0 50px;
+  }
+
+  .email-link {
+    font-size: 25px;
+    padding: 5px;
+  }
 }
